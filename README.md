@@ -8,8 +8,7 @@ A basic flashing guide that every Xiaomi developer wannabe needs.
 ## Unlock bootloader
 * The bootloader of recent Xiaomi phones is locked by default.
 * In order to establish ADB (Android Debugging Bridge) and start tampering, the bootloader has to be unlocked first.
-
-#### Warning
+### Warning
 1. Unlocking bootloader (and further installing other ROMs) will __erase all data on your phone so PLEASE MAKE A BACKUP__.
 1. A SIM with internet connection is needed.
 1. In each and every steps of this tutorial, remember to __connect your phone via a USB cable and a USB port or hub__. Do not use other cables or ports (like Thunderbolt) because it might affect compatibility. In some scenarios, you have to use USB Type-A 2.0 ports instead of 3.0.
@@ -42,10 +41,8 @@ This command puts your phone into bootloader mode. Alternatively, you can just e
 1. Because Xiaomi default recovery may override the custom recovery, you have to reboot into recovery by hold __Volume Up__ and __Power__ until the Mi logo appears and the phone vibrates (or else you have to do all the steps all over again).
   #### Note
   There are many custom recovery but I mainly use TWRP. Not every TWRP here works. One time or another you have to use a specifically moded version of TWRP for your phone or you have to use another recovery (E.g. Xiaomi Mi 9 SE).
-
 ### Flasing firmware (optional)
 If your current MIUI is not up to date, download an official firmware stock ROM and flash it first then reboot to fastboot and flash your custom ROM after. Remember to back up your data before flashing or wiping anything.
- 
 ### Flasing custom ROM
 In recovery:
 1. __BACK UP YOUR DATA__.
@@ -59,21 +56,21 @@ Alternatively, enter the __Advanced Settings -> Apply from ADB__ (or something l
 #### Warning
 * __NEVER EVER EVER EVER DELETE/WIPE SYSTEM__ because there is a high chance that your phone will get stuck in a fastboot loop.
 * If you are in a fastboot loop, you need:
-* ##### Qualcomm USB Driver 
-* If you are using Windows, it will be automatically installed when you plug the USB in.
-* If there is some error, install it manually <a href="https://gsmusbdrivers.com/download/android-qualcomm-usb-driver/">here</a>.
-* ##### A flash tool
-* <a href="https://www.xiaomiflash.com/download/">Official Xiaomi Flash Tool</a>
-* This only works in Windows and before using it will invoke specific drivers to be installed.
-* If there is an error while installing drivers, try creating a log folder (to store log) in the same folder as the .exe file and run the tool again.
-* <a href="https://www.xiaomitool.com/V2/">Xiaomi Tool V2</a>
-* This is a custom tool that helps moding ROM in every Xiaomi phones.
-* Only runs on Windows.
-* <a href="https://github.com/Szaki/XiaomiADBFastbootTools">Xiaomi ADB/Fastboot Tools</a>
-* This is a custom tool that runs on Windows, MacOS, Linux.
-* If you keep getting random errors using Xiaomi Flash, use this. It requires Oracle Java and OpenJDK >=11.
-* ##### An official stock ROM
-* Download an official fastboot ROM (or your fastboot old ROM for safety measures).
-* Remember, it has to be FASTBOOT ROM (__.tgz__ or __.gz__ and you have to rename it into __.tgz__) or else you cannot flash in fastboot.
+  ##### Qualcomm USB Driver 
+  * If you are using Windows, it will be automatically installed when you plug the USB in.
+  * If there is some error, install it manually <a href="https://gsmusbdrivers.com/download/android-qualcomm-usb-driver/">here</a>.
+  ##### A flash tool (choose one)
+  1. <a href="https://www.xiaomiflash.com/download/">Official Xiaomi Flash Tool</a>
+    * This only works in Windows and before using it will invoke specific drivers to be installed.
+    * If there is an error while installing drivers, try creating a log folder (to store log) in the same folder as the .exe file and run the tool again.
+  1. <a href="https://www.xiaomitool.com/V2/">Xiaomi Tool V2</a>
+    * This is a custom tool that helps moding ROM in every Xiaomi phones.
+    * Only runs on Windows.
+  1. <a href="https://github.com/Szaki/XiaomiADBFastbootTools">Xiaomi ADB/Fastboot Tools</a>
+    * This is a custom tool that runs on Windows, MacOS, Linux.
+    * If you keep getting random errors using Xiaomi Flash, use this. It requires Oracle Java and OpenJDK >=11.
+  ##### An official stock ROM
+  * Download an official fastboot ROM (or your fastboot old ROM for safety measures).
+  * Remember, it has to be FASTBOOT ROM (__.tgz__ or __.gz__ and you have to rename it into __.tgz__) or else you cannot flash in fastboot.
 
 
