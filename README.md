@@ -1,5 +1,5 @@
 # xiaomi-flashing
-A basic flashing guide that every Xiaomi developer wannabe needs.
+A basic flashing guide that one needs to read before trifling with ROOTING/flashing Xiaomi's ROMs.
 
 ## Official Stock ROM
 * Stock ROMs of every models are available on <a href="https://c.mi.com/global/miuidownload/index">Miui Official ROM Site</a>. I repeat. EVERY.
