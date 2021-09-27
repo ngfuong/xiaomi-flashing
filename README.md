@@ -55,11 +55,12 @@ Alternatively, enter the __Advanced Settings -> Apply from ADB__ (or something l
 4. Once the ROM has been flashed successfully, reboot into system and your phone is running on a new ROM!
 #### Warning
 * __NEVER EVER EVER EVER DELETE/WIPE SYSTEM__ because there is a high chance that your phone will get stuck in a fastboot loop.
-* If you are in a fastboot loop, you need:
-  ##### Qualcomm USB Driver 
+## Boot Loop Recovery
+If you are in a fastboot loop, you need:
+  ### 1. Qualcomm USB Driver 
   * If you are using Windows, it will be automatically installed when you plug the USB in.
   * If there is some error, install it manually <a href="https://gsmusbdrivers.com/download/android-qualcomm-usb-driver/">here</a>.
-  ##### A flash tool (choose one)
+  ### 2. A flash tool (choose one)
   1. <a href="https://www.xiaomiflash.com/download/">Official Xiaomi Flash Tool</a>
     * This only works in Windows and before using it will invoke specific drivers to be installed.
     * If there is an error while installing drivers, try creating a log folder (to store log) in the same folder as the .exe file and run the tool again.
