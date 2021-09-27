@@ -54,13 +54,13 @@ Alternatively, enter the __Advanced Settings -> Apply from ADB__ (or something l
 `adb sideload *ROM_file*.zip`
 4. Once the ROM has been flashed successfully, reboot into system and your phone is running on a new ROM!
 #### Warning
-* __NEVER EVER EVER EVER DELETE/WIPE SYSTEM__ because there is a high chance that your phone will get stuck in a fastboot loop.
+* __DELETE/WIPE SYSTEM__ poses a high chance that your phone will get stuck in a fastboot loop.
 ## Boot Loop Recovery
 If you are in a fastboot loop, you need:
-  ### 1. Qualcomm USB Driver 
+  ### Qualcomm USB Driver 
   * If you are using Windows, it will be automatically installed when you plug the USB in.
   * If there is some error, install it manually <a href="https://gsmusbdrivers.com/download/android-qualcomm-usb-driver/">here</a>.
-  ### 2. A flash tool (choose one)
+  ### A flash tool (choose one)
   1. <a href="https://www.xiaomiflash.com/download/">Official Xiaomi Flash Tool</a>
     * This only works in Windows and before using it will invoke specific drivers to be installed.
     * If there is an error while installing drivers, try creating a log folder (to store log) in the same folder as the .exe file and run the tool again.
@@ -70,8 +70,13 @@ If you are in a fastboot loop, you need:
   1. <a href="https://github.com/Szaki/XiaomiADBFastbootTools">Xiaomi ADB/Fastboot Tools</a>
     * This is a custom tool that runs on Windows, MacOS, Linux.
     * If you keep getting random errors using Xiaomi Flash, use this. It requires Oracle Java and OpenJDK >=11.
-  ##### An official stock ROM
+  ### An official stock ROM
   * Download an official fastboot ROM (or your fastboot old ROM for safety measures).
   * Remember, it has to be FASTBOOT ROM (__.tgz__ or __.gz__ and you have to rename it into __.tgz__) or else you cannot flash in fastboot.
-
+  ### Flashing official stock ROM
+  If you use Xiaomi ADB/Fastboot Tools, the process is:
+  * Boot phone into bootloader
+  * In the Fastboot Menu, select ROM folder (unzip the __.tgz__ or __.gz__ file)
+  * Select the Clean Install option
+  * Begin flashing
 
