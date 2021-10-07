@@ -50,11 +50,11 @@ In recovery:
 1. Download your custom ROM (__.zip__) to your computer and copy it into the __/sdcard__ of your phone.
 Wipe __Dalik/David Cache__, __Cache__ and __Data__.
 1. __Format Data__ (in __Advanced Wipe__) or __Factory Reset__, which will decrypt data, format your partition and delete all files.
-3. In the __Install__ menu, choose your copied ROM and flash it.
-
-Alternatively, enter the __Advanced Settings -> Apply from ADB__ (or something like that) and type on your terminal:
-`adb sideload *ROM_file*.zip`
-4. Once the ROM has been flashed successfully, reboot into system and your phone is running on a new ROM!
+1. In the __Install__ menu, choose your copied ROM and flash it.
+1. Alternatively, enter the __Advanced Settings -> Apply from ADB__ (or something like that) and type on your terminal:
+`adb sideload *ROM_file*.zip` (This is not needed if you copy and install the ROM directly the phone)
+1. (optional) Install GApps if your custom ROM requires
+1. Once the ROM has been flashed successfully, reboot into system and your phone is running on a new ROM!
 > **Warning**: 
 > __DELETE/WIPE SYSTEM__ poses a high chance that your phone will get stuck in a fastboot loop.
 ## Boot Loop Recovery
