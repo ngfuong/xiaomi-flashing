@@ -27,6 +27,7 @@ A basic flashing guide that one needs to read before trifling with ROOTING/flash
 ### Enable USB debugging
 1. Enter Developer Mode again.
 1. Enable USB debugging via __Settings -> Additional Settings -> Developer Options__.
+1. (optional) Enable **File Transfer** in USB debugging mode when connected to computer 
 
 ## (2) Flashing
 ### Install a custom recovery
